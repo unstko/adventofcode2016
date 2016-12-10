@@ -7,6 +7,9 @@ class Test02(Test):
         cls.nr = '02'
 
     def test_1(self):
-        test_input = "ULL\nRRDDD\nLURDL\nUUUUD"
+        test_input = """ULL
+RRDDD
+LURDL
+UUUUD"""
         self.execute_test(test_input)
         self.assertEqual('1985', self.solution.get_solution(1))
