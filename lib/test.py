@@ -19,7 +19,7 @@ class Test(unittest.TestCase):
     def execute_test(self, test_input):
         mocked_open_function = mock_open(read_data=test_input)
         with patch("builtins.open", mocked_open_function):
-            self.solution.calculate()
+            self.solution.calculate(True)
 
     def get_solution(self, nr):
         return self.solution.get_solution(nr)

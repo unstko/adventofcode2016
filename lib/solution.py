@@ -1,6 +1,7 @@
 class Solution:
     def __init__(self, nr):
         self.nr = nr
+        self.test = False
         self.input = ""
         self.solution = ["(not calculated)", "(not calculated)"]
         self.calculated = [False, False]
@@ -8,7 +9,7 @@ class Solution:
     def __str__(self):
         return "Solution 1: {}\nSolution 2: {}".format(self.solution[0], self.solution[1])
 
-    def calculate(self):
+    def calculate(self, test=False):
         raise NotImplementedError('users must define calculate to use this base class')
 
     def get_solution(self, nr):
