@@ -25,6 +25,9 @@ class Solution:
         if nr in [1, 2]:
             return self.calculated[nr-1]
 
-    def read_input(self):
+    def read_input(self, lines=False):
         with open(self.nr+"/input.txt", "r") as f:
-            self.input = f.read()
+            if lines:
+                self.input = f.readlines()
+            else:
+                self.input = f.read()
