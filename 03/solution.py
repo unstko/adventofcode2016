@@ -1,12 +1,13 @@
 from lib import solution
+from lib.triangle import Triangle
 import re
 
 
 class Solution(solution.Solution):
     def __init__(self, nr):
         super().__init__(nr)
-        self.compares = ([0, 1, 2], [0, 2, 1], [1, 2, 0])
-        self.possible = 0
+        self.triangle_1 = Triangle()
+        self.possible_1 = 0
 
     def calculate(self, test=False):
         self.read_instructions()
@@ -18,12 +19,7 @@ class Solution(solution.Solution):
     def check_triangles(self):
         for triangle in self.input:
             sides = re.split(r'\s+', triangle.strip(' '))
-            if self.check_triangle(sides):
-                self.possible += 1
-        self.set_solution(1, self.possible)
-
-    def check_triangle(self, sides):
-        for compare in self.compares:
-            if int(sides[compare[0]]) + int(sides[compare[1]]) <= int(sides[compare[2]]):
-                return False
-        return True
+            self.triangle_1.set_sides(sides)
+            if self.triangle_1.is_possible():
+                self.possible_1 += 1
+        self.set_solution(1, self.possible_1)

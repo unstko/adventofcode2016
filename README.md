@@ -29,3 +29,7 @@ My solutions for [adventofcode.com (2016)](http://adventofcode.com/2016) with Py
 ### Keypad
 - Move finger in direction
 - Press button and append code
+
+### Triangle
+- Set and get side lengths
+- Check if triangle is possible
