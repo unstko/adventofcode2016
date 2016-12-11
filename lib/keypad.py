@@ -10,9 +10,11 @@ class Keypad:
         elif direction == 'D':
             button = self.button + 3
         elif direction == 'L':
-            button = self.button - 1
+            if self.button not in (4, 7):
+                button = self.button - 1
         elif direction == 'R':
-            button = self.button + 1
+            if self.button not in (3, 6):
+                button = self.button + 1
         if 0 < button < 10:
             self.button = button
 
