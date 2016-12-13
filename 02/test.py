@@ -13,3 +13,4 @@ LURDL
 UUUUD"""
         self.execute_test(test_input)
         self.assertEqual('1985', self.solution.get_solution(1))
+        self.assertEqual('5DB3', self.solution.get_solution(2))
