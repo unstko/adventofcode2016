@@ -4,12 +4,12 @@ My solutions for [adventofcode.com (2016)](http://adventofcode.com/2016) with Py
 ## My base classes
 ### Solution
 - Solution for a day can calculate part 1 and 2
-- Input is loaded from file input.txt inside the folder of the day
+- Input is loaded from file `input.txt` inside the folder of the day
 - Solutions of a day have to define their own calculate method
 
 ### Test
 - Sets up and tears down calculation of a solution for a day
-- Mocks the input from the input.txt by an input string
+- Mocks the input from the `input.txt` by an input string
 
 ## My libraries
 ### Point2D
@@ -27,6 +27,8 @@ My solutions for [adventofcode.com (2016)](http://adventofcode.com/2016) with Py
 - Image output gets flipped depend on coordinate origin
 
 ### Keypad
+- Standard is 9-button keypad
+- Load custom keypad from JSON file
 - Move finger in direction
 - Press button and append code
 
