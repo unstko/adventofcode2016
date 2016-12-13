@@ -1,9 +1,23 @@
+import json
+
+
 class Keypad:
     def __init__(self, start=5):
         self.button = start
         self.code = ''
+        self.custom = None
+
+    def load_custom(self, file):
+        with open(file) as fp:
+            self.custom = json.load(fp)
 
     def move(self, direction):
+        if self.custom is None:
+            self.move_std(direction)
+        else:
+            self.move_custom(direction)
+
+    def move_std(self, direction):
         button = 0
         if direction == 'U':
             button = self.button - 3
@@ -17,6 +31,11 @@ class Keypad:
                 button = self.button + 1
         if 0 < button < 10:
             self.button = button
+
+    def move_custom(self, direction):
+        if str(self.button) in self.custom:
+            if str(direction) in self.custom[str(self.button)]:
+                self.button = self.custom[str(self.button)][str(direction)]
 
     def press(self):
         self.code += str(self.button)
