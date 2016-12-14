@@ -72,6 +72,9 @@ class Test(unittest.TestCase):
         print(self.solution)
         print("")
 
+    def set_param(self, key, value):
+        self.solution.set_param(key, value)
+
     def execute_test(self, test_input):
         with mock_open('/input.txt', test_input, False):
             self.solution.calculate(True)

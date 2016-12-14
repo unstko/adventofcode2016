@@ -3,11 +3,15 @@ class Solution:
         self.nr = nr
         self.test = False
         self.input = ""
+        self.params = {}
         self.solution = ["(not calculated)", "(not calculated)"]
         self.calculated = [False, False]
 
     def __str__(self):
         return "Solution 1: {}\nSolution 2: {}".format(self.solution[0], self.solution[1])
+
+    def set_param(self, key, value):
+        self.params[key] = value
 
     def calculate(self, test=False):
         raise NotImplementedError('users must define calculate to use this base class')
