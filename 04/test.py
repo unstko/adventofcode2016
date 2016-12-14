@@ -15,3 +15,9 @@ totally-real-room-200[decoy]
         """
         self.execute_test(test_input)
         self.assertEqual(1514, self.solution.get_solution(1))
+
+    def test_2(self):
+        test_input = """qzmt-zixmtkozy-ivhz-343[zimth]"""
+        self.set_param("room name", "very encrypted name")
+        self.execute_test(test_input)
+        self.assertEqual(343, self.get_solution(2))

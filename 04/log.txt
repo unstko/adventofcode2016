@@ -16,8 +16,6 @@ What is the sum of the sector IDs of the real rooms?
 
 Your puzzle answer was 409147.
 
-The first half of this puzzle is complete! It provides one gold star: *
-
 --- Part Two ---
 
 With all the decoy data out of the way, it's time to decrypt this list and get moving.
@@ -29,3 +27,7 @@ To decrypt a room name, rotate each letter forward through the alphabet a number
 For example, the real name for qzmt-zixmtkozy-ivhz-343 is very encrypted name.
 
 What is the sector ID of the room where North Pole objects are stored?
+
+Your puzzle answer was 991.
+
+Both parts of this puzzle are complete! They provide two gold stars: **
