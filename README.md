@@ -48,3 +48,4 @@ My solutions for [adventofcode.com (2016)](http://adventofcode.com/2016) with Py
 | 03 | Check triangles | re | Triangle |
 | 04 | Encrypt and check room names | re, collections, operator | Dict |
 | 05 | Create password from MD5 hashes | hashlib | - |
+| 06 | Find message from repetition code | collections, operator | Dict |
