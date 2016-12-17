@@ -10,10 +10,10 @@ class Solution(solution.Solution):
 
     def calculate(self, test=False):
         self.read_instructions()
+        self.calc_passwords()
 
     def read_instructions(self):
         self.read_input()
-        self.calc_passwords()
 
     def calc_passwords(self):
         pos1 = 0
