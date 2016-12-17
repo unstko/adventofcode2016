@@ -11,7 +11,7 @@ My solutions for [adventofcode.com (2016)](http://adventofcode.com/2016) with Py
 - Sets up and tears down calculation of a solution for a day
 - Mocks the input from the `input.txt` by an input string
 
-## My libraries
+## My modules
 ### Point2D
 - 2D point inside cartesian coordinate system
 - Set and get x and y coordinates
@@ -35,3 +35,12 @@ My solutions for [adventofcode.com (2016)](http://adventofcode.com/2016) with Py
 ### Triangle
 - Set and get side lengths
 - Check if triangle is possible
+
+## My solutions
+| Day | Task | Python modules | My modules |
+| --- | ---- | -------------- | ---------- |
+| 01 | Find shortest path and cross point | copy, math, PIL | Point2D, Map |
+| 02 | Find codes at keypads | os, json | Keypad |
+| 03 | Check triangles | re | Triangle |
+| 04 | Encrypt and check room names | re, collections, operator | - |
+| 05 | Create password from MD5 hashes | hashlib | - |
