@@ -25,3 +25,4 @@ dvrsen
 enarar"""
         self.execute_test(test_input)
         self.assertEqual("easter", self.solution.get_solution(1))
+        self.assertEqual("advent", self.solution.get_solution(2))

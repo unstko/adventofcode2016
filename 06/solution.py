@@ -7,7 +7,8 @@ class Solution(solution.Solution):
         super().__init__(nr)
         self.length = 1
         self.dicts = []
-        self.message = ""
+        self.message1 = ""
+        self.message2 = ""
 
     def calculate(self, test=False):
         self.read_instructions()
@@ -28,9 +29,11 @@ class Solution(solution.Solution):
         for line in self.input:
             i = 0
             for char in line:
-                if i < self.length:
+                if char.isalpha() and i < self.length:
                     self.dicts[i].add(char)
                     i += 1
         for i in range(0, self.length):
-            self.message += self.dicts[i].get_sorted_string_by_value_and_key(1)
-        self.set_solution(1, self.message)
+            self.message1 += self.dicts[i].get_sorted_string_by_value_and_key(1)
+            self.message2 += self.dicts[i].get_sorted_string_by_value_and_key(1, True)
+        self.set_solution(1, self.message1)
+        self.set_solution(2, self.message2)
