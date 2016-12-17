@@ -1,7 +1,6 @@
 from lib import solution
+from lib.dict import Dict
 import re
-import collections
-import operator
 
 
 class Solution(solution.Solution):
@@ -34,12 +33,11 @@ class Solution(solution.Solution):
 
     @staticmethod
     def get_checksum(string):
-        d = collections.defaultdict(int)
+        dictionary = Dict()
         for c in string:
             if c.isalpha():
-                d[c] -= 1
-        s = collections.OrderedDict(sorted(d.items(), key=operator.itemgetter(1, 0)))
-        checksum = "".join(str(x) for x in s)[:5]
+                dictionary.add(c)
+        checksum = dictionary.get_sorted_string_by_value_and_key(5)
         return checksum
 
     @staticmethod

@@ -36,11 +36,15 @@ My solutions for [adventofcode.com (2016)](http://adventofcode.com/2016) with Py
 - Set and get side lengths
 - Check if triangle is possible
 
+### Dict
+- Sortable dictionary
+- Get sorted strings with arbitrary length
+
 ## My solutions
 | Day | Task | Python modules | My modules |
 | --- | ---- | -------------- | ---------- |
 | 01 | Find shortest path and cross point | copy, math, PIL | Point2D, Map |
 | 02 | Find codes at keypads | os, json | Keypad |
 | 03 | Check triangles | re | Triangle |
-| 04 | Encrypt and check room names | re, collections, operator | - |
+| 04 | Encrypt and check room names | re, collections, operator | Dict |
 | 05 | Create password from MD5 hashes | hashlib | - |
