@@ -7,8 +7,7 @@ class Test(test.Test):
         cls.nr = '06'
 
     def test_1(self):
-        test_input = """
-eedadn
+        test_input = """eedadn
 drvtee
 eandsr
 raavrd
@@ -23,7 +22,6 @@ tesnvt
 vntsnd
 vrdear
 dvrsen
-enarar
-        """
+enarar"""
         self.execute_test(test_input)
         self.assertEqual("easter", self.solution.get_solution(1))
