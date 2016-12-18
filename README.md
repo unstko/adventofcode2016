@@ -49,3 +49,4 @@ My solutions for [adventofcode.com (2016)](http://adventofcode.com/2016) with Py
 | 04 | Encrypt and check room names | re, collections, operator | Dict |
 | 05 | Create password from MD5 hashes | hashlib | - |
 | 06 | Find message from repetition code | collections, operator | Dict |
+| 07 | Match ABBA and ABA patterns | re | - |
