@@ -1,7 +1,7 @@
 from lib import test
 
 
-class Test(test.Test):
+class Test07(test.Test):
     @classmethod
     def setUpClass(cls):
         cls.nr = '07'
